@@ -7,7 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --color-blue:#3366ff;
+    --color-white: white;
+    --color-card:#99ccff;
+}
 /* 
     GENERAL
 */
@@ -16,4 +20,82 @@
     max-width: 1200px;
     margin: 0 auto;
 
+}
+
+header{
+    background-color: var(--color-blue);
+}
+
+/* 
+    HEADER
+*/
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.logo-img{
+    width: 100%;
+}
+nav{
+    display: none;
+}
+.header-container li {
+    margin: 0 10px;
+}
+
+ul * {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--color-white);
+}
+
+.button{
+    color: black;
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.mobile-tablet{
+    display: block;
+}
+
+.burgher{
+    color: var(--color-white);
+}
+
+/* 
+    MAIN
+*/
+
+.my-row h2{
+    color: var(--color-blue);
+}
+
+/* 
+    RESPONSIVE
+*/
+/* 
+    BREAK-POINT MOBILE
+*/
+@media screen and (min-width:768px){
+
+}
+/* 
+    BREAK-POINT TABLET
+*/
+@media screen and (min-width:998px){
+    
+    nav{
+
+        display: block;
+
+    }
+    .mobile-tablet{
+        display: none;
+    }
 }

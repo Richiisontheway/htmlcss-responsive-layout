@@ -14,6 +14,7 @@ html{
     --color-blue:#3366ff;
     --color-white: white;
     --color-card:#99ccff;
+    --color-bluviolet:#9593E6;
 }
 /* 
     GENERAL
@@ -84,7 +85,8 @@ ul * {
     margin: 20px;
     border-radius: 20px;
 }
-.first .my-row :first-child *{
+.first .my-row .text-sec1,
+.first .my-row .text-sec1 > *{
     padding: 10px;
 }
 .my-row h2{
@@ -101,15 +103,17 @@ ul * {
     border-radius: 20px;
     margin: 10px;
 }
+
 .my-big-col > .img {
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: flex-end;
 }
 .my-row .my-big-col img{
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin:0;
 }
 .icon{
     text-align: center;
@@ -189,19 +193,61 @@ ul * {
     border-radius: 100%;
     padding: 20px 30px;
 }
+
 /* 
-    SEZIONE 3
+    TERZA SECTION
 */
+
 .sect3{
     text-align: center;
 }
 .sect3 *{
     margin-top: 40px;
 }
+.sect3 h2{
+    color: var(--color-bluviolet);
+}
+.my-col3{
+    margin-top: 30px;
+    background-color: var(--color-bluviolet);
+}
 
-/* 
-    TERZA SECTION
-*/
+.img-border img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+.img-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-cropper img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+     width: 150%;
+    margin: 0 0 0 -20%;
+ }
+ .sect3 .my-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .sect3 .my-col3{
+    width: 80%;
+    border-radius: 25px;
+ }
+ .sect3 .my-col3 p{
+    color: var(--color-white);
+    padding-bottom: 20px;
+    font-weight: bold;
+ }
 /* 
     RESPONSIVE
 */
@@ -209,7 +255,7 @@ ul * {
     BREAK-POINT TABLET
 */
 @media screen and (min-width:768px){
-
+    /* SECTION1 */
     .my-row{
         display: flex;
         flex-wrap: wrap;
@@ -220,11 +266,30 @@ ul * {
     .my-col{
         width: calc(30% - 20px);
     }
+    /* SECTION 2 */
     .purple .my-col {
         width: 100%;
     }
+    /* SECTION 3 */
+    .sect3 .my-col3{
+        display: flex;  
+        text-align: left;
+        align-items: center; 
+    }
+    .sect3 .img-cropper{
+        margin:50px;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
     
-
+    }
+    .sect3 .my-col3 p{
+        margin-left: 50px;
+     }
 }
 /* 
     BREAK-POINT PC
@@ -253,6 +318,7 @@ ul * {
     .my-col{
         width: calc(30% - 20px);
     }
+    /* SECONDA SECTION */
     .purple .my-row {
         display: flex;
         

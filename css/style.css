@@ -74,13 +74,17 @@ ul * {
 /* 
     MAIN
 */
+
+/* 
+    PRIMA SECTION
+*/
 .my-big-col ,
 .my-col {
     background-color: var(--color-card);
     margin: 20px;
     border-radius: 20px;
 }
-.my-row :first-child *{
+.first .my-row :first-child *{
     padding: 10px;
 }
 .my-row h2{
@@ -122,6 +126,56 @@ ul * {
     margin-top: 20px;
 }
 /* 
+    SECONDA SECTION
+*/
+.purple{
+    background-color: #9593E6;
+}
+.purple .my-col{
+    background-color: #9593E6;
+    padding: 0 20px;
+}
+.purple .text{
+    padding-top: 50px;
+    text-align: left;
+}
+.my-col2 {
+    background-color: var(--color-white);
+    margin: 20px;
+    border-radius: 20px;
+}
+.my-col2 .text{
+    text-align: center;
+}
+.my-col2 img{
+    width: 100%;
+}
+.purple img  {
+    width: 100%;
+    text-align: center;
+}
+
+.purple h2,
+.purple p {
+    color: var(--color-white);
+    margin: 40px 0;
+}
+.my-col2 p,
+.my-col2 h2 {
+    color: black;
+    padding-bottom: 50px;
+}
+.purple .contenitore{
+    padding-bottom: 20px;
+}
+.text2{
+    text-align: center;
+}
+.text2
+/* 
+    TERZA SECTION
+*/
+/* 
     RESPONSIVE
 */
 /* 
@@ -138,6 +192,18 @@ ul * {
     }
     .my-col{
         width: calc(30% - 20px);
+    }
+    .purple .my-row {
+        display: flex;
+        
+    }
+    .purple .my-col {
+        padding-top: 90px;
+        width: 40%;
+    }
+    .purple .my-col2 {
+        width: 40%;
+        
     }
 
 }

@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 :root{
     --color-blue:#3366ff;
     --color-white: white;
@@ -17,7 +20,7 @@
 */
 
 .contenitore{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -71,24 +74,79 @@ ul * {
 /* 
     MAIN
 */
-
+.my-big-col ,
+.my-col {
+    background-color: var(--color-card);
+    margin: 20px;
+    border-radius: 20px;
+}
+.my-row :first-child *{
+    padding: 10px;
+}
 .my-row h2{
     color: var(--color-blue);
 }
-
+.my-row p{
+    margin-bottom: 20px;
+}
+.my-row a {
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 10px 25px;
+    background-color: var(--color-blue);
+    border-radius: 20px;
+    margin: 10px;
+}
+.my-big-col > .img {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.my-row .my-big-col img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.icon{
+    text-align: center;
+    color: var(--color-blue);
+    font-size: 80px;
+}
+.text{
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 15px;
+}
+.text p{
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
 /* 
     RESPONSIVE
 */
 /* 
-    BREAK-POINT MOBILE
+    BREAK-POINT TABLET
 */
 @media screen and (min-width:768px){
 
+    .my-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .my-big-col{
+        width: 60%;
+    }
+    .my-col{
+        width: calc(30% - 20px);
+    }
+
 }
 /* 
-    BREAK-POINT TABLET
+    BREAK-POINT PC
 */
-@media screen and (min-width:998px){
+@media screen and (min-width:992px){
+
+    /* HEADER */
     
     nav{
 
@@ -97,5 +155,17 @@ ul * {
     }
     .mobile-tablet{
         display: none;
+    }
+    /* PRIMA SECTION */
+    .my-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .my-big-col{
+        width: 60%;
+        display: flex;
+    }
+    .my-col{
+        width: calc(30% - 20px);
     }
 }

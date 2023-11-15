@@ -134,6 +134,7 @@ ul * {
 */
 .purple{
     background-color: #9593E6;
+    margin-top: 20px;
 }
 .purple .my-col{
     background-color: #9593E6;
@@ -217,7 +218,6 @@ ul * {
     border-radius: 50%;
 }
 
-
 .img-cropper {
     width: 100px;
     height: 100px;
@@ -226,13 +226,15 @@ ul * {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+    flex-shrink: 0;
+
 }
 .img-cropper img{
     display: block;
     margin: 0 auto;
-    height: auto;
-     width: 150%;
-    margin: 0 0 0 -20%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
  }
  .sect3 .my-row{
     display: flex;
@@ -248,6 +250,77 @@ ul * {
     padding-bottom: 20px;
     font-weight: bold;
  }
+ /* 
+    QUARTA SECTION
+*/
+.sect4 .purple{
+    padding: 25px ;
+}
+.text-sect4{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.sect4 .text-sect4 > h2{
+    color: var(--color-white);
+    text-align: center;
+}
+.card{
+    margin: 0 40px;
+    padding: 10px 40px;
+}
+.card > h2,
+.card > h3{
+    color: var(--color-bluviolet);
+    text-align: left;
+}
+
+.card h2{
+    font-size: 3em; 
+}
+.card h3{
+    font-size: 1.75em; 
+}
+.card p{
+    color: black;
+}
+.sect4 a{
+    background-color: var(--color-bluviolet);
+    color: var(--color-white);
+    display: inline-block;
+    margin-left: auto;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    
+}
+/* QUINTA SECTION */
+.sect5 .my-col4{
+    margin-top: 20px;
+    padding: 20px 95px;
+      /* E LA SOMMA DEI PADDING DELLA SECTION SOPRA*/
+}
+.end{
+    margin-left: 0;
+}
+.sect5 .my-col4 h2{
+    color: var(--color-bluviolet);
+    font-size: 2em;
+    text-align: left;
+}
+.sect5 .my-col4 p{
+    text-align: left;
+    margin-top: 25px;
+}
+.pur{
+    color: var(--color-bluviolet);
+    font-weight: 900;
+    font-size: larger;
+}
+.sect5 a{
+    background-color: var(--color-bluviolet);
+}
+
+
 /* 
     RESPONSIVE
 */
@@ -290,6 +363,16 @@ ul * {
     .sect3 .my-col3 p{
         margin-left: 50px;
      }
+     /* SECTION 4 */
+     .sect4 .my-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+     .sect4 .my-col3{
+        width: calc(50% - 20px);
+     }
+
 }
 /* 
     BREAK-POINT PC
@@ -321,14 +404,18 @@ ul * {
     /* SECONDA SECTION */
     .purple .my-row {
         display: flex;
-        
+        justify-content: center;      
     }
     .purple .my-col {
         padding-top: 90px;
         width: 40%;
     }
     .purple .my-col2 {
-        width: 40%;
+        width: 50%;
         
     }
+    /* TERZA SECTION */
+    .sect4 .my-col3{
+        width: calc((100% / 3) - 20px);
+     }
 }

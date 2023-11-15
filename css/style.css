@@ -25,6 +25,10 @@ html{
     margin: 0 auto;
 
 }
+.contenitore2{
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
 header{
     background-color: var(--color-blue);
@@ -294,11 +298,7 @@ ul * {
     
 }
 /* QUINTA SECTION */
-.sect5 .my-col4{
-    margin-top: 20px;
-    padding: 20px 95px;
-      /* E LA SOMMA DEI PADDING DELLA SECTION SOPRA*/
-}
+
 .end{
     margin-left: 0;
 }
@@ -318,6 +318,36 @@ ul * {
 }
 .sect5 a{
     background-color: var(--color-bluviolet);
+}
+
+/* 
+    SECTION 6
+*/
+.sect6 *{
+    text-align: center;
+}
+.sect6 .purple {
+    padding: 0 40px;
+}
+h4{
+    color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+}
+.sect6 h3{
+    color: var(--color-white);
+}
+.sect6 h2{
+    color: orange;
+    font-size: 3em;
+}
+.sect6 p{
+    padding: 20px 0;
+}
+.sect6 a{
+    background-color: var(--color-white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
 }
 
 
@@ -371,6 +401,10 @@ ul * {
      }
      .sect4 .my-col3{
         width: calc(50% - 20px);
+     }
+     /* SECTION 5 */
+     .sect5 .my-row{
+        display: flex;
      }
 
 }

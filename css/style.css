@@ -27,7 +27,7 @@ html{
 }
 .contenitore2{
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 80%;
 }
 
 header{
@@ -302,7 +302,10 @@ ul * {
 .end{
     margin-left: 0;
 }
+
+
 .sect5 .my-col4 h2{
+    padding-top: 25px;
     color: var(--color-bluviolet);
     font-size: 2em;
     text-align: left;
@@ -310,14 +313,19 @@ ul * {
 .sect5 .my-col4 p{
     text-align: left;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 .pur{
     color: var(--color-bluviolet);
     font-weight: 900;
     font-size: larger;
 }
+.small{
+    padding: 25px 0;
+}
 .sect5 a{
     background-color: var(--color-bluviolet);
+    
 }
 
 /* 
@@ -417,6 +425,13 @@ h4{
      .sect5 .my-row{
         display: flex;
      }
+    .big{
+        width:calc(60% - 20px);
+        margin-right: 10px;
+    }
+    .small{
+        width: calc(40% - 20px);
+    }
 
 }
 /* 
